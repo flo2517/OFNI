@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  justify-content: center;
+  margin: .5em;
+  flex-direction: column;
+  background: $color-1;
+  border-radius: 25px;
+  font-family: $font-1;
+  img {
+    width: 650px;
+    margin: 10px auto;
+    border-radius: 5em;
+    box-shadow: 3px 3px 2px 2px black;
+    background: black;
+    padding-right: 2px;
+  }
+
+  nav {
+    margin: 10px 0;
+    ul{
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      li {
+        padding: 1rem 0 1rem .4rem;
+        position: relative;
+
+        &:hover i {
+          transform: translate(3px, 3px);
+        }
+
+        i{
+          position: absolute;
+          font-size: .95rem;
+          transform: translateY(3px);
+          transition: .2s ease;
+        }
+
+        a {
+          color: $color-5 ;
+        }
+        .active {
+          color: $color-4 ;
+        }
+
+        span {
+          margin-left: 2rem;
+        }
+
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+
+  }
+}
